@@ -1,0 +1,86 @@
+.LC-parent {
+    padding-inline: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+}
+
+
+.LC-main {
+    max-width: 1300px;  
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.LC-heading-container {
+    text-align: center;
+}
+
+.LC-heading-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: normal;
+    color: #111111;
+}
+
+.LC-logo-Parent-container {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+
+
+.LC-logo-container {
+    
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition-delay: 1ms;
+    transition-duration: height 3s,width 3s,transform 4s;
+    transition-timing-function: ease;
+}
+.LC-logo-container :hover {
+    height: 70px;
+    width: 70px;
+    transform: translate(2px,2px);
+  
+    
+}
+    
+.LC-logoImg {
+   width: 100%;
+   height: 100%;
+    border-radius: 999px;
+}
+
+@media screen and (min-width:640px) {
+    .LC-logo-container {
+       
+        width: 60px;
+        height: 60px;
+    }
+    .LC-main {
+        padding-right: 5.5rem;
+        padding-left: 5.5rem;
+    }
+    .LC-heading-text {
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    
+    .LC-main {
+        padding-right: 7.5rem;
+        padding-left: 7.5rem;
+    }
+    .LC-heading-text {
+        font-size: 2.25rem;
+    }
+}
